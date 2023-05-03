@@ -328,7 +328,7 @@ header nav .form i {
   color: rgb(138, 12, 12);
 }
 .services .serv-box .icon-2 {
-  color: rgb(33, 28, 28);
+  color: rgb(141, 52, 52);
 }
 .services .serv-box .icon-3 {
   color: var(--transparent-color);
@@ -344,7 +344,7 @@ header nav .form i {
   padding-top: 100px;
   height: 600px;
   position: relative;
-  background-image: url(../images/tech.jpg);
+  background-image: url(../images/cool-4.jpg);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -420,51 +420,51 @@ header nav .form i {
 .protfolio {
   padding: 100px 0;
 }
-.protfolio .shuffle{
+.protfolio .shuffle {
   display: flex;
   justify-content: center;
 }
 
-.protfolio .shuffle li{
+.protfolio .shuffle li {
   padding: 10px;
 }
 
-.protfolio .shuffle li.active{
-background-color: var(--main-color);
-color: white;
-border-radius: 8px;
+.protfolio .shuffle li.active {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 8px;
 }
 
-.protfolio .image-container{
+.protfolio .image-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
 }
-.protfolio .image-container .box{
+.protfolio .image-container .box {
   overflow: hidden;
-position: relative;
+  position: relative;
 }
-.protfolio .image-container .box:hover .caption{
+.protfolio .image-container .box:hover .caption {
   bottom: 0;
 }
-.protfolio .image-container .box:hover img{
+.protfolio .image-container .box:hover img {
   transform: rotate(3deg) scale(1.1);
 }
-@media (min-width: 768px){
-.protfolio .image-container .box{
-  flex-basis: 50%;
+@media (min-width: 768px) {
+  .protfolio .image-container .box {
+    flex-basis: 50%;
+  }
 }
+@media (min-width: 1199px) {
+  .protfolio .image-container .box {
+    flex-basis: 25%;
+  }
 }
-@media (min-width: 1199px){
-.protfolio .image-container .box{
-  flex-basis: 25%;
-}
-}
-.protfolio .image-container .box img{
+.protfolio .image-container .box img {
   max-width: 100%;
 }
 
-.protfolio .image-container .box .caption{
+.protfolio .image-container .box .caption {
   position: absolute;
   left: 0;
   padding: 20px;
@@ -474,17 +474,17 @@ position: relative;
   bottom: -100px;
 }
 
-.protfolio .image-container .box .caption h4{
+.protfolio .image-container .box .caption h4 {
   font-weight: normal;
   margin-bottom: 10px;
   font-size: 17px;
   color: #2e3c41;
 }
-.protfolio .image-container .box .caption p{
+.protfolio .image-container .box .caption p {
   color: #888;
 }
 
-.protfolio .more{
+.protfolio .more {
   background-color: var(--main-color);
   color: white;
   padding: 15px 20px;
@@ -567,7 +567,7 @@ position: relative;
 .stats {
   padding: 100px 0;
   text-align: center;
-  background-image: url(../images/protfolio-2.png);
+  background-image: url(../images/cool-p.jpg);
   background-size: cover;
   position: relative;
 }
@@ -765,7 +765,7 @@ position: relative;
 /* Start quote  */
 .quote {
   padding: 100px 0;
-  background-image: url(../images/protfolio-7.png);
+  background-image: url(../images/coll-2.jpg);
   background-size: cover;
   position: relative;
   text-align: center;
@@ -918,9 +918,10 @@ position: relative;
 /* Start subscribe  */
 .subscribe {
   padding: 100px 0;
-  background-image: url(../images/subscribe.jpg);
+  background-image: url(../images/coll-3.jpg);
   background-size: cover;
   position: relative;
+  width: 100%;
   color: white;
 }
 
@@ -997,12 +998,13 @@ position: relative;
 }
 
 .contact .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
+  display: flex;
   justify-content: space-between;
 }
 
+.contact .content form{
+  flex-basis: 70%;
+}
 .contact .content form .main-input {
   padding: 20px;
   display: block;
@@ -1010,7 +1012,7 @@ position: relative;
   margin-bottom: 30px;
   width: 100%;
   caret-color: black;
-  background-color: #f2f2f2;
+  
 }
 
 .contact .content form .main-input:focus {
@@ -1034,6 +1036,9 @@ position: relative;
 }
 
 @media (max-width: 767px) {
+  .contact .content{
+    flex-direction: column;
+  }
   .contact .content .info {
     order: -1;
     text-align: center;
@@ -1041,9 +1046,8 @@ position: relative;
 }
 
 .contact .content .info {
-  flex-direction: column;
-  display: flex;
-  align-items: self-end;
+  flex-basis: 25%;
+  
 }
 
 .contact .content .info h4 {
