@@ -1,3 +1,3 @@
 # Template-Two
-Template Two was made by Ossama Elzero 
+Kasper was made by Graphberry 
 https://huussein45.github.io/Template-Two/
