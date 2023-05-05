@@ -596,6 +596,10 @@ header nav .form i {
   .stats .container .box:not(:first-child) {
     border-top: solid #a99e9e 1px;
   }
+  .stats{
+    background-image: url(../images/shuffle-01.jpg);
+  background-size: cover;
+  }
 }
 
 @media (max-width: 767px) {
